@@ -17,7 +17,7 @@ const AddTask = () => {
         const email = user.email;
         const tasksTotal = { Name, Description, email };
 
-        const url = 'http://localhost:5000/task';
+        const url = 'https://immense-lowlands-25738.herokuapp.com/task';
         fetch(url, {
             method: "POST",
             headers: {

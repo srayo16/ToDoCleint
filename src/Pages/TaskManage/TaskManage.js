@@ -10,7 +10,7 @@ const TaskManage = () => {
     const [user, loading] = useAuthState(auth);
 
     const { isLoading, error, data: tasks, refetch } = useQuery('repoData', () =>
-        fetch(`http://localhost:5000/task?email=${user.email}`).then(res =>
+        fetch(`https://immense-lowlands-25738.herokuapp.com/task?email=${user.email}`).then(res =>
             res.json()
         )
     )

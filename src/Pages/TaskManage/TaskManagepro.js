@@ -16,7 +16,7 @@ const TaskManagepro = ({ task, index, refetch }) => {
         const confirmation = window.confirm('Are you sure to delete?');
 
         if (confirmation) {
-            fetch(`http://localhost:5000/task/${id}`, {
+            fetch(`https://immense-lowlands-25738.herokuapp.com/task/${id}`, {
                 method: "DELETE",
                 headers: {
                     'content-type': 'application/json'
